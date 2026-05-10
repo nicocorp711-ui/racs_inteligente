@@ -581,7 +581,7 @@
 <div class="toast" id="toast"></div>
 
 <script>
-const SHEETS_URL='https://script.google.com/macros/s/AKfycbyaKWX5o2j9UHVVCMXmXE7Tbh_UNHThvv3CRX_g6WIVrCXsgb3FbM1I6oOUGgcu44MH7g/exec';
+const SHEETS_URL='https://script.google.com/macros/s/AKfycbxiJ3rsoDSRk2d71HLCAeyZ6yeuEZw31y9YfDotc_5ogziFRxy7YmK9qug1OIU6LSpnVQ/exec';
 const PENDING_KEY='seguridad_pending', PERSONAL_KEY='seguridad_personal', PENDING_UPDATES_KEY='seguridad_pending_updates';
 
 // ── FUENTE DE VERDAD: siempre el servidor ──
@@ -1081,7 +1081,7 @@ REGLAS:
     const response = await fetch(SHEETS_URL, {
       method: 'POST',
       mode: 'cors',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'text/plain' },
       body: JSON.stringify({
         action: 'analizarIA',
         apiKey: apiKey,
